@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fountain Delight School</title>
+    <style>
+:root{--blue:#0b4da2;--yellow:#ffb703;--light:#f5f8ff}
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI", sans-serif}
+body{background:var(--light);color:#222;line-height:1.6}
+header{background:white;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+.logo{font-weight:800;color:var(--blue);font-size:22px}
+nav a{margin:0 10px;text-decoration:none;color:#333;font-weight:600}
+.btn{background:var(--blue);color:white;padding:10px 18px;border-radius:25px;text-decoration:none;display:inline-block;border:none;cursor:pointer}
+.btn-yellow{background:var(--yellow);color:#000}
+.hero{background:linear-gradient(rgba(11,77,162,0.85),rgba(11,77,162,0.85)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');background-size:cover;padding:80px 5%;color:white;text-align:center}
+.hero h1{font-size:42px;margin-bottom:10px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:40px 5%}
+.card{background:white;padding:25px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,0.05);text-align:center}
+section{padding:50px 5%}
+h2{color:var(--blue);margin-bottom:15px;text-align:center;font-size:30px}
+.portal{background:white;max-width:500px;margin:20px auto;padding:25px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.1)}
+.portal input{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.gallery img{width:100%;height:150px;object-fit:cover;border-radius:10px}
+form input, form select, form textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+footer{background:#06295e;color:white;padding:30px 5%;text-align:center;margin-top:30px}
+@media(max-width:700px){nav{display:none}.hero h1{font-size:28px}}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Fountain Delight School</div>
+    <nav>
+        <a href="#about">About</a><br>
+        <a href="#academics">Academics</a><br>
+        <a href="#admission">Admission</a><br>
+        <a href="#portal">Portal</a><br>
+        <a href="#contact">Contact</a>
+    </nav>
+    <a href="#admission" class="btn">Apply Now</a>
+</header>
+
+<div class="hero">
+    <h1>Learn, Grow, Excel</h1>
+    <p>CBC Compiant | Safe Environment | Qualified Teachers | Githunguri</p><br>
+    <a href="#admission" class="btn btn-yellow">Admission 2027 Open</a>
+    <a href="#portal" class="btn">Check Results</a>
+</div>
+
+<div class="cards">
+    <div class="card"><h3>PP1 - Grade 6</h3><p>CBC Cirrriculum with spacious classrooms</p></div>
+    <div class="card"><h3>Perfomance</h3><p>Top school in Githunguri 2024-2026</p></div>
+    <div class="card"><h3>Extracurricular Activities</h3><p>Wide range of clubs and sports programs</p></div>
+
+</div>
+<section id="about">
+    <h2>About Us</h2>
+    <p style="max-width:800px;margin:auto;text-align:center">Fountain Delight is dedicated to providing holistic education.<b>Mission:</b>To nrture all-round learners.<b>Vision:</b>To be a aleading CBC primary school in the region.<b>Motto:</b>Disciplin and Exellence </p>
+    <br>
+    <div style="text-align:center">
+        <h3>Message from Director</h3>
+        <p><i>"We welcome your child to ahome of learning and values."</i>-Director</p>
+
+    </div>
+</section>
+
+
+<section id="academics" style="background:white">
+    <h2>Academics</h2>
+    <div class="cards">
+        <div class="card"><b>Early Years:</b>PP1,PP2</div>
+        <div class="card"><b>Lower Primary:</b>Grade 1-3</div>
+        <div class="card"><b>Upper Primary:</b>Grade 4-6</div>
+        <div class="card"><b>Activities:</b>Homework, Exams, Timetable</div>
+    </div>
+    <br>
+    <p style="text-align:center;margin-top:20px"><a href="#" class="btn">Download School Calender</a></p>
+</section>
+
+<section  id="admission">
+    <h2>Admission</h2>
+    <div style="max-width:800px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:20px">
+    <div>
+        <h3>Requirements</h3>
+        <ul>
+            <li>Birth certificate</li>
+            <li>Parent's identification</li>
+            <li>School records (if transferring)</li>
+            <li>2 Passport Photos</li>
+            <li>Previous Report Form</li>
+
+        </ul><br>
+        <a href="#" class="btn btn-yellow">Download Application Form(PDF)</a>
+    </div>
+    <form onsubmit="alert('Application sent!We will call you.');return false">
+        <h3>Online Application</h3>
+        <input type="text" placeholder="Parent Name" required>
+        <input type="text" placeholder="Child Name" required>
+        <select required><option>Select Class</option><option>PP1</option><option>PP2</option><option>Grade 1-6</option></select>
+        <input type="tel" placeholder="(M-Pesa No)" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <button type="submit" class="btn btn-yellow">Submit Application</button>
+    </form>
+    </div>
+</section>
+
+<section id="portal" style="background:white">
+    <h2>Stdent & Parent Portal</h2>
+    <div class="portal">
+      <h3>Check Results/Fees</h3>
+            <input type="text" id="adm" placeholder="Adimission Number e.g FD/001">
+            <input type="password" placeholder="Password/Date of Birth">
+            <button class="btn" style="width:100%" onclick="checkResult()">Login to View Report</button>
+            <p id="result" style="margin-top:15px;font-weight:bold;text-align:center"></p>
+            <hr style="margin:15px 0">
+            <a href="#">Download Homework</a> | <a href="#">Download Fee Structure</a>
+    </div>
+</section>
+
+<section>
+    <h2>Gallery and News</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f">
+        <img src="https://images.unsplash.com/photo-1516534775068-ba3e7458af70">
+        <img src="https://images.unsplash.com/photo-1494949649109-ecfc8b8c40cc">
+        <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5">
+    </div>
+    <div style="text-align:center;margin-top:20px">
+        <p><b>Latest News</b>Graduation day/Closing day/Sports day</p>
+    </div>
+</section>
+
+<section id="contact" style="background:white">
+    <h2>Contact Us</h2>
+    <div style="max-width:900px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:20px">
+       <form onsubmit="alert('Message sent to school email!'); return false">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+       </form>
+       <div>
+        <p><b>Location:</b> Githunguri, Opposite National Oil (along the power lines)</p>
+        <p><b>Phone:</b><a href="tel:0748530252">0748530252</a></p>
+        <p><b>Email:</b>info@fountain.edu.ke</p><br>
+        <p><b>Follow Us:</b></p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> |    <a href="#">Instagram</a>
+        <iframe src="https://www.google.com/maps/embed" width="100%" height="180" style="border:0;border-radius:10px" allowfullscreen="" loading="lazy"></iframe>
+       </div>
+    </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/0748530252" target="_blank">Whatsapp Us</a>
+
+<footer>
+    <p>&copy; 2026 Fountain Delight School | Designed for Parents, lerners & Teachers | All rights reserved.</p>
+    <p>Disclaimer: This website is for informational purposes only. The school reserves the right to make changes to its programs, policies, and fees without prior notice.</p>
+    <p>Privacy Policy: We respect your privacy and are committed to protecting your personal information. Any data collected through this website will be used solely for school-related purposes and will not be shared with third parties without your consent.</p>
+    <p>Facebook | Twitter | Instagram | M-Pesa Till No: 123456</p>
+</footer>
+
+<script>
+    function checkResult() {
+       let adm = document.getElementById('adm').value;
+        let result = document.getElementById('result');
+        if (adm === 'FD/001') {
+            result.textContent = 'Student: John Doe | Grade: 5 | Average: 85%';
+        } else {
+            result.textContent = 'Invalid Admission Number. Please try again.';
+        }
+    }
+</script>
+
+</body>
+</html>
